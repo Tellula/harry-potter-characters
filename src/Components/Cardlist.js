@@ -2,27 +2,26 @@ import React from "react";
 import Card from "./Card";
 
 const Cardlist = ({ characters }) => {
-  const ImagedCharacters = [];
-
-  for (const character of characters) {
-    if (character.image !== "") {
-      ImagedCharacters.push(character);
-    }
-  }
+  const ImagedCharacters = characters.filter((char) => char.image !== "");
 
   return (
     <div className="cardContainer">
-      {ImagedCharacters.map((user, index) => {
+      {ImagedCharacters.map((char, index) => {
         return (
-            
           <Card
-            key={user.name}
-            image={user.image}
-            name={user.name}
-            actor={user.actor}
-            house={user.house}
+            key={char.name}
+            image={char.image}
+            name={char.name}
+            actor={char.actor}
+            species={char.species}
+            gender={char.gender}
+            dateOfBirth={char.dateOfBirth}
+            eyeColour={char.eyeColour}
+            hairColour={char.hairColour}
+            wand={char.wand.core}
+            patronus={char.patronus}
+            house={char.house}
           />
-          
         );
       })}
     </div>

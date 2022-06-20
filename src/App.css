@@ -1,17 +1,16 @@
+@font-face {
+  font-family: "Harry Potter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Harry Potter Regular"), url("HARRP___.woff") format("woff");
+}
 
-    @font-face {
-      font-family: 'Harry Potter Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Harry Potter Regular'), url('HARRP___.woff') format('woff');
-      }
-
-html, body {
-
+html,
+body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
-  background-image: url('paper.jpg');
+  background-image: url("paper.jpg");
 }
 
 .App {
@@ -19,39 +18,70 @@ html, body {
 }
 
 .App-logo {
-  height: 20vmin;
-  position: inherit;
+  height: 40vmin;
   pointer-events: none;
+  position: relative;
+}
+
+.map-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.gif {
+  margin: 0;
+  top: 10%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s ease-in-out;
   }
 }
 
 
-.header {
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+.pointer {
+  cursor: pointer;
+}
 
+.title {
+  color: rgb(248, 186, 17);
+  height: 2em;
+  padding: 20px;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(143, 47, 34));
 }
 
 .cardContainer {
+  display: grid;
+  width: 95vw;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  padding: 20px;
   margin-top: 20px;
 }
 
 .portrait {
-  height: 350px;
+  height: 15em;
   border: 10px solid;
   border-image: linear-gradient(10deg, rgb(63, 42, 19), rgb(184, 135, 44)) 1;
 }
 
+.portrait:hover {
+  border-image: linear-gradient(10deg, rgb(241, 193, 35), rgb(184, 135, 44)) 1;
+}
+
+.characterName {
+  font-family: "Harry Potter Regular";
+}
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(45deg);
   }
 }
