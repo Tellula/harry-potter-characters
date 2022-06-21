@@ -28,6 +28,7 @@ class App extends Component {
 
   onClickMap = (event) => {
     this.setState({ map: !this.state.map });
+    this.setState({ searchfield: "" });
   };
 
   render() {

@@ -20,15 +20,15 @@ class Card extends React.Component {
   render() {
     if (this.state.viewMode) {
       return (
-        <div className="shadow-5 card">
+        <div className="shadow-5 card pointer" onClick={this.switchView}>
           <img
-            className="portrait pointer"
+            className="portrait"
             src={this.state.image}
             alt={this.state.name}
-            onClick={this.switchView}
+            
           />
           <div className="details">
-            <h1 className="characterName grow">{this.state.name}</h1>
+            <h1 className="characterName">{this.state.name}</h1>
           </div>
         </div>
       );
