@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/harry-potter-characters/static/css/main.f381776c.css",
+    "main.css": "/harry-potter-characters/static/css/main.069936a8.css",
     "main.js": "/harry-potter-characters/static/js/main.85f1e8bd.js",
     "static/media/paper.jpg": "/harry-potter-characters/static/media/paper.141aec473308e3aa90c3.jpg",
-    "static/media/cardBb.png": "/harry-potter-characters/static/media/cardBb.0d02587757fabd33e19c.png",
+    "static/media/cardBb.png": "/harry-potter-characters/static/media/cardBb.425318711164da7d38a4.png",
     "static/media/HARRP___.woff": "/harry-potter-characters/static/media/HARRP___.84cd2148743cbf164473.woff",
     "index.html": "/harry-potter-characters/index.html",
-    "main.f381776c.css.map": "/harry-potter-characters/static/css/main.f381776c.css.map",
+    "main.069936a8.css.map": "/harry-potter-characters/static/css/main.069936a8.css.map",
     "main.85f1e8bd.js.map": "/harry-potter-characters/static/js/main.85f1e8bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f381776c.css",
+    "static/css/main.069936a8.css",
     "static/js/main.85f1e8bd.js"
   ]
 }
