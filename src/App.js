@@ -3,6 +3,8 @@ import Cardlist from "./Components/Cardlist";
 import SearchBox from "./Components/SearchBox";
 import Scroll from "./Components/Scroll";
 import ErrorBoundary from "./Components/ErrorBoundary";
+
+
 import "./App.css";
 
 class App extends Component {
@@ -25,7 +27,7 @@ class App extends Component {
     this.setState({ searchfield: event.target.value });
   };
 
-  onClick = (event) => {
+  onClickMap = (event) => {
     this.setState({ map: !this.state.map });
   };
 
@@ -37,18 +39,18 @@ class App extends Component {
 
     return this.state.map ? (
       <div className="map-container">
-        <img
-          className="gif grow"
-          src="marauder.gif"
-          alt="marauder"
-          onClick={this.onClick}
-        />
+      <div className="intro tc grow pointer" onClick={this.onClickMap}>
+      I solemnly swear that i am up to no good !
+      </div>
+      <img src="marauder.gif" alt="marauder" className="gif"/>
       </div>
     ) : (
       <div className="tc georgia">
         <div className="header flex items-center flex-column ">
           <h1 className="f1 title w-100">Harry Potter Characters</h1>
           <SearchBox searchChange={this.onSearchChange} />
+          <button className="mischief pointer grow" onClick={this.onClickMap}>Mischief managed !</button>
+
         </div>
         <Scroll>
           <ErrorBoundary>

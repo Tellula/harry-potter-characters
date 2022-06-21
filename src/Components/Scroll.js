@@ -3,11 +3,10 @@ import React from "react";
 const Scroll = (props) => {
   return (
     <div
+      className="frog"
       style={{
         overflowY: "scroll",
-        border: "1px solid black",
         height: "100vh",
-        background: "rgba(0, 0, 0, 0.3)",
       }}
     >
       {props.children}
