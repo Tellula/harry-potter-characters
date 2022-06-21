@@ -20,7 +20,7 @@ class Card extends React.Component {
   render() {
     if (this.state.viewMode) {
       return (
-        <div className="br3 bw2 shadow-5 card">
+        <div className="shadow-5 card">
           <img
             className="portrait pointer"
             src={this.state.image}
@@ -34,8 +34,8 @@ class Card extends React.Component {
       );
     }
     return (
-      <div className="tc br3  bw2 shadow-5 cardB">
-        <div className=" detailsB" onClick={this.switchView}>
+      <div className="tc shadow-5 card">
+        <div className="detailsB" onClick={this.switchView}>
           <h1 className="characterName">{this.state.name}</h1>
           <p className="charInfo">Actor : {this.unknown(this.state.actor)}</p>
           <p className="charInfo">Species : {this.unknown(this.state.species)}</p>

@@ -3,8 +3,7 @@ import Cardlist from "./Components/Cardlist";
 import SearchBox from "./Components/SearchBox";
 import Scroll from "./Components/Scroll";
 import ErrorBoundary from "./Components/ErrorBoundary";
-
-
+import logo from "./dhc.png"
 import "./App.css";
 
 class App extends Component {
@@ -38,11 +37,9 @@ class App extends Component {
     });
 
     return this.state.map ? (
-      <div className="map-container">
-      <div className="intro tc grow pointer" onClick={this.onClickMap}>
-      I solemnly swear that i am up to no good !
-      </div>
-      <img src="marauder.gif" alt="marauder" className="gif"/>
+      <div className="background-container">
+      {/* <div className="hiddenButton" onClick={this.onClickMap}></div> */}
+      <img className="vertical-center App-logo pointer" onClick={this.onClickMap} src={logo} alt="" />
       </div>
     ) : (
       <div className="tc georgia">
