@@ -84,27 +84,19 @@ body {
 .card {
   height: 26em;
   padding: 20px;
-  background-image: url("/public/card.png");
+  background-image: url("/public/cardBb.png");
   background-size: cover;
-  background-color: rgb(18, 47, 126);
+  border: 3px rgb(80, 47, 7) solid;
+  
 }
 
 .cardB {
   height: 26em;
   padding: 20px;
-  background-color: rgb(18, 47, 126);
   background-image: url("/public/cardBb.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px rgb(18, 47, 126) solid;
-}
-
-@media only screen and (max-width: 600px) {
-  .card {
-    background-image: url("/public/card3.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  border: 3px rgb(80, 47, 7) solid;
 }
 
 .details {
